@@ -9,46 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Serif JP', serif; font-weight: 700; line-height: 1.7; margin: 0; color: #000; background-color: #fcfcfc; font-size: clamp(1.1rem, 0.8vw + 0.9rem, 1.35rem); }
-        
         header { background: #004080; color: #fff; padding: 2px 0; text-align: center; width: 100%; }
         header h1 { font-weight: 900; font-size: clamp(1.4rem, 6vw, 2.2rem); margin: 0; letter-spacing: -1px; line-height: 1.1; }
         ruby rt { font-size: 0.4em; transform: translateY(-2px); }
-        
-        /* ガイド文の基本設定 */
         .view-guide { text-align: center; font-size: 0.8rem; color: #555; background: #e9eef3; padding: 0; border-bottom: 1px solid #d0d7de; }
-
         .wrapper { max-width: 1100px; margin: 0 auto; padding: 0 10px; }
-        
-        .nav-menu { margin: 2px 0 5px 0; } 
+        .nav-menu { margin: 2px 0 5px 0; }
         .nav-menu ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-start; }
         .nav-menu a { display: inline-block; text-decoration: none; color: #000; padding: 3px 7px; border: 2px solid #ffb6c1; border-radius: 4px; background: #fff0f5; font-size: 0.85em; line-height: 1.1; }
         .nav-menu .highlight { background: #ffc0cb; border-color: #ff69b4; font-weight: 900; }
         .nav-menu a[href*="aisatu"], .nav-menu a[href*="jimu"] { background: #ffffff; border-color: #cccccc; color: #666; }
-
         .site-intro { background: #f0f4f8; padding: 5px 12px; border-radius: 8px; box-sizing: border-box; }
         .site-intro p:first-child { margin-top: 5px; }
         .site-intro p:last-child { margin-bottom: 5px; }
-        
         .info-box { background: #fff; padding: 10px; border-left: 6px solid #004080; margin: 10px 0; font-size: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .site-intro > img { max-width: 100%; height: auto; display: block; margin: 10px 0; border-radius: 4px; }
         .photo-row { display: flex; flex-wrap: nowrap; gap: 5px; margin: 10px 0; width: 100%; justify-content: center; }
         .photo-row img { width: 32%; max-width: 220px; max-height: 160px; object-fit: cover; border-radius: 4px; }
-
-        /* 文中のリンクバー（メニューのボタンと同じ形） */
         a.bar-link { display: inline-block; text-decoration: none; color: #000; padding: 1px 6px; border: 2px solid #ffb6c1; border-radius: 4px; background: #fff0f5; line-height: 1.2; }
-
-        /* 見出し（見た目は今の案内枠の紺に合わせた控えめなもの） */
         h2.section-title { font-size: 1.15em; color: #004080; border-left: 6px solid #004080; padding-left: 8px; margin: 14px 0 6px 0; line-height: 1.4; }
-
-
         footer { text-align: center; padding: 10px 10px; font-size: 0.95rem; color: #444; background-color: #f0f0f0; border-top: 1px solid #ccc; margin-top: 5px; }
-
-        /* 横位置やPCではガイドを隠す設定を復活 */
         @media (orientation: landscape) { .view-guide { display: none; } body { font-size: 1.3rem; } }
-        @media (min-width: 1025px) { 
-            .view-guide { display: none; }
-            .nav-menu ul { justify-content: center; } 
-        }
+        @media (min-width: 1025px) { .view-guide { display: none; } .nav-menu ul { justify-content: center; } }
     </style>
 </head>
 <body>
@@ -59,21 +41,21 @@
 <div class="wrapper">
     <nav class="nav-menu">
         <ul>
-            <li><a href="hoki2026bira.pdf" target="_blank">ビラ</a></li>
-            <li><a href="hoki2026poster.pdf" target="_blank">ポスター</a></li>
-            <li><a href="20260509toujitu.pdf" target="_blank">当日冊子</a></li>
+            <li><a href="hoki2026bira.pdf">ビラ</a></li>
+            <li><a href="hoki2026poster.pdf">ポスター</a></li>
+            <li><a href="20260509toujitu.pdf">当日冊子</a></li>
             <li><a href="20260509toujitu-text.html">当日冊子（文字版）</a></li>
-            <li><a href="https://hokiici-stamp.jimdofree.com/" target="_blank">史跡巡り</a></li>
-            <li><a href="2026aisatu.pdf" target="_blank">荒井会長挨拶(未)</a></li>
-            <li><a href="2026takenami.pdf" target="_blank">竹並万吉氏の塙保己一顕彰</a></li>
-            <li><a href="2026jimu.pdf" target="_blank">事務局説明(未)</a></li>
+            <li><a href="https://hokiici-stamp.jimdofree.com/">史跡巡り</a></li>
+            <li><a href="2026aisatu.pdf">荒井会長挨拶(未)</a></li>
+            <li><a href="2026takenami.pdf">竹並万吉氏の塙保己一顕彰</a></li>
+            <li><a href="2026jimu.pdf">事務局説明(未)</a></li>
             <li><a href="2025hokiitimaturi.html" class="highlight">昨年の実績</a></li>
         </ul>
     </nav>
     <section class="site-intro">
         <h2 class="section-title">ほきいち祭について</h2>
         <p>本庄市の元・埼玉県議会議員 竹並万吉氏は、郷土の偉人・塙保己一先生を「本庄市の偉人」から「世界に誇る偉人」へ高めるために、民間主導で塙保己一先生を顕彰する「ほきいち祭実行委員会」を組織して、令和５年５月５日に市民が楽しく学べる「ほきいち祭」を始めました。</p>
-        <p>今年は本庄地区で午後だけのホールイベントですが、皆様のご来場をお待ちしています。詳細は『<a class="bar-link" href="20260509toujitu.pdf" target="_blank">当日冊子</a>』をご覧ください。</p>
+        <p>今年は本庄地区で午後だけのホールイベントですが、皆様のご来場をお待ちしています。詳細は『<a class="bar-link" href="20260509toujitu.pdf">当日冊子</a>』をご覧ください。</p>
         <img src="gundoku1.png" alt="子ども群読劇">
         <div class="info-box">
             日時　令和８年５月９日（土）午後１～４時　入場無料<br>
@@ -87,7 +69,7 @@
         </div>
         <img src="gassyou6a.png" alt="児童合唱">
         <img src="ondo1.png" alt="ほきいち音頭">
-        <p>令和７年１２月、竹並万吉会長はお亡くなりになりました。令和８年１月の「お別れの会」には、ほきいち祭実行委員会として「<a class="bar-link" href="2026takenami.pdf" target="_blank">竹並万吉氏の塙保己一顕彰</a>」冊子を配布し、故人の遺徳を称えました。令和８年からは荒井一夫が会長になりました。</p>
+        <p>令和７年１２月、竹並万吉会長はお亡くなりになりました。令和８年１月の「お別れの会」には、ほきいち祭実行委員会として「<a class="bar-link" href="2026takenami.pdf">竹並万吉氏の塙保己一顕彰</a>」冊子を配布し、故人の遺徳を称えました。令和８年からは荒井一夫が会長になりました。</p>
     </section>
 </div>
 <footer>ほきいち祭実行委員会 会長 荒井 一夫<br>事務局 田中 学 gakusan@tanaka.nifty.jp</footer>
